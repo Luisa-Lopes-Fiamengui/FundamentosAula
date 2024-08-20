@@ -103,5 +103,31 @@ internal class Program
         porco1.emitirSom();
 
         Console.WriteLine("-------------------------------------------");
+
+        Mago espresso = new Mago();
+
+        espresso.Nome = "Mago Espresso";
+        espresso.Vida = 100;
+        espresso.Inteligencia = 87;
+        espresso.Agilidade = 55;
+        espresso.Forca = 62;
+        espresso.Nivel = 1;
+
+        Cavalheiro madelena = new Cavalheiro();
+
+        madelena.Nome = "Mago Espresso";
+        madelena.Vida = 100;
+        madelena.Inteligencia = 33;
+        madelena.Agilidade = 40;
+        madelena.Forca = 89;
+        madelena.Nivel = 1;
+
+        espresso.apresentarse();
+        madelena.apresentarse();
+
+        int ataque = madelena.atacar();
+        int defesa = madelena.defender();
+        Console.WriteLine("Força do Ataque: " + ataque);
+        Console.WriteLine("Força do Defesa: " + defesa);
     }
 }
